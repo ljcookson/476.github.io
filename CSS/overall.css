@@ -1,0 +1,13 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    
+    background-color: rgba(0,79,46);
+    color: #fff;
+    font-size: 30px;
+}
+button{
+    background-color: rgba(255,200,46);
+    font-size: 30px;
+}
