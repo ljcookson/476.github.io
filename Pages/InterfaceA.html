@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Academic Schedule</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
+    </head>
+    <body class="mainContainer">
+        <div class="banner">
+            <div class="bannerLeft">
+                <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" />
+            </div>
+            <div class="bannerMiddle">
+                2022-2023 Academic Schedule
+            </div>
+            <div class="bannerRight">
+                <p id="date">
+                </p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="midLeft">
+                <label for="year">Academic Year</label>
+                <select name="year" id="year" value="2022-2023">
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                    <option value="2022-2023" selected="selected">2022-2023</option>
+                    <option value="2023-2024">2023-2024</option>
+                </select>
+            </div>
+            <div class="midRight">
+                <label for="semester">Semester</label>
+                <select name="semester" id="semester" value="Fall">
+                    <option value="Spring/Summer">Spring/Summer</option>
+                    <option value="Fall" selected="selected">Fall</option>
+                    <option value="Winter">Winter</option>
+                </select>
+            </div>
+            <div class="info">
+                Fall 2022
+            </div>
+        </div>
+        <footer class="bottom">Admin Login</footer>
+    </body>
+    
+    <script>
+        var months = ["January", "February","March","April","May","June", "July", "August", "September","October", "November", "December"];
+        var dt = new Date();
+        var year = dt.getFullYear();
+        var month = months[dt.getMonth()];
+        var day = dt.getDate()
+        document.getElementById('date').innerHTML= month + " " + day + ", " + year;
+        //new Date();
+    </script>
+</html>
