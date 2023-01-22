@@ -3,6 +3,30 @@
     <head>
         <title>Academic Schedule - Add Year</title>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
+        <script type="text/javascript" src="../Scripts/primary.js"> </script>  
     </head>
-    <body></body>
+    <body class="mainContainer">
+        <div class="banner" role="banner">
+            <div class="bannerLeft">
+                <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" role="img"/>
+            </div>
+            <div class="bannerMiddle">
+                2022-2023 Academic Schedule
+            </div>
+            <div class="bannerRight">
+                <p id="date">
+                </p>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        var months = ["January", "February","March","April","May","June", "July", "August", "September","October", "November", "December"];
+        var dt = new Date();
+        var year = dt.getFullYear();
+        var month = months[dt.getMonth()];
+        var day = dt.getDate()
+        document.getElementById('date').innerHTML= month + " " + day + ", " + year;
+        //new Date();
+    </script>
 </html>
