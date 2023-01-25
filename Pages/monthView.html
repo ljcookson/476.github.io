@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Academic Schedule</title>
+        <title>Academic Schedule - Current Month</title>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
         <!--
         <script type="text/javascript" src="../Scripts/primary.js"> </script> 
         -->
+        <link rel="stylesheet" type="text/css" href="../CSS/monthCSS.css"/>
+        <script type="text/javascript" src=""> </script> 
     </head>
 
     <header>
@@ -38,55 +40,72 @@
             </div>
             <div class="midRight">
                 <label for="semester">Semester</label>
-                <select name="semester" id="semester" value="Fall">
+                <select name="semester" id="semester" value="Winter">
                     <option value="Spring/Summer">Spring/Summer</option>
-                    <option value="Fall" selected="selected">Fall</option>
-                    <option value="Winter">Winter</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter" selected="selected">Winter</option>
+                </select>
+            </div>
+            <div class="midCenter">
+                <label for="month">Month</label>
+                <select name="month" id="month" value="January">
+                    <option value="January" selected="selected">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
                 </select>
             </div>
             <div class="info">
-                <h1>Fall 2022</h1>
+                <h1>Winter 2023</h1>
                 <details class="infoAccordian">
                     <summary>Term Information</summary>
                     <div class="step1">
-                        <span class="bold">Held in:</span> September - December<br/>
-                        <span class="bold">Start of Term:</span> 31-August-2022<br/>
-                        <span class="bold">End of Term:</span> 22-December-2022
+                        <span class="bold">Held in:</span> January - April<br/>
+                        <span class="bold">Start of Term:</span> 4-January-2023<br/>
+                        <span class="bold">End of Term:</span> 27-April-2023
                         <p style="margin: 5px"> </p>
                         <details class="step2">
                             <summary>Class Dates</summary>
                             <div class="step1">
-                                <span class="bold">Start of Classes:</span> 31-August-2022<br/>
-                                <span class="bold">End of Classes:</span> 6-December-2022
+                                <span class="bold">Start of Classes:</span> 4-January-2023<br/>
+                                <span class="bold">End of Classes:</span> 11-April-2023
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Examination Dates</summary>
                             <div class="step1">
-                                <span class="bold">First Day of Exams:</span> 9-December-2022<br/>
-                                <span class="bold">Last Day of Exams:</span> 22-December-2022
+                                <span class="bold">First Day of Exams:</span> 14-April-2023<br/>
+                                <span class="bold">Last Day of Exams:</span> 27-April-2023
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Tuition and Fee Payment Dates</summary>
                             <div class="step1">
-                                <span class="bold">Due date:</span> 31-August-2022<br/>
-                                <span class="bold">End of Penalty-Free Payment Period:</span> 20-September-2022
+                                <span class="bold">Due date:</span> 4-January-2023<br/>
+                                <span class="bold">End of Penalty-Free Payment Period:</span> 31-January-2023
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Class Add/Drop Dates</summary>
                             <div class="step1">
-                                <span class="bold">End of Course-Add Period:</span> 14-September-2022<br/>
-                                <span class="bold">End of No-Record Drop Period:</span> 14-September-2022<br/>
-                                <span class="bold">End of Grade-of-W Drop Period:</span> 15-November-2022
+                                <span class="bold">End of Course-Add Period:</span> 17-January-2023<br/>
+                                <span class="bold">End of No-Record Drop Period:</span> 17-January-2023<br/>
+                                <span class="bold">End of Grade-of-W Drop Period:</span> 15-March-2023
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Tuition and Fee Refund Dates</summary>
                             <div class="step1">
-                                <span class="bold">End of 100% Refund Period:</span> 14-September-2022<br/>
-                                <span class="bold">End of 50% Refund Period:</span> 28-September-2022
+                                <span class="bold">End of 100% Refund Period:</span> 17-January-2023<br/>
+                                <span class="bold">End of 50% Refund Period:</span> 31-January-2023
                             </div>
                         </details>
                     </div>
@@ -98,42 +117,34 @@
                         <details class="step2">
                             <summary>Reading Week</summary>
                             <div class="step1">
-                                <span class="bold">Start (Monday):</span> 7-November-2022<br/>
-                                <span class="bold">End (Saturday):</span> 12-November-2022
+                                <span class="bold">Start (Monday):</span> 20-February-2023<br/>
+                                <span class="bold">End (Saturday):</span> 25-February-2023
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Stat Holidays - No Classes <span class="seventyfive">(Most University Offices Closed)</span>;</summary>
                             <div class="step1">
-                                <span class="bold">Labour Day:</span> 5-September-2022<br/>
-                                <span class="bold">National Truth and Reconciliation Day:</span> 30-September-2022<br/>
-                                <span class="bold">Thanksgiving Day:</span> 10-October-2022<br/>
-                                <span class="bold">Remembrance Day:</span> 11-November-2022
+                                <span class="bold">Good Friday:</span> 7-April-2023<br/>
+                                <span class="bold">Family Day:</span> 20-February-2023<br/>
+                                <!-- <span class="bold">Thanksgiving Day:</span> 10-October-2022<br/>
+                                <span class="bold">Remembrance Day:</span> 11-November-2022 -->
                             </div>
                         </details>
                         <details class="step2">
                             <summary>Other</summary>
                             <div class="step1">
-                                <span class="bold">Student Orientation:</span> 30-August-2022<br/>
-                                <span class="bold">Fall Convocation:</span> 21-October-2022<br/>
-                                <span class="bold">University Closed From <span class="seventyfive">(noon)</span>:</span> 22-December-2022<br/>
-                                <span class="bold">University Closed To <span class="seventyfive">(8:15 a.m.)</span>:</span> 3-January-2023
+                                <span class="bold">Student Orientation:</span> 3-January-2023<br/>
+                                <span class="bold">Last day to apply to graduate for Spring 2023 Convocation:</span> 31-January-2023<br/>
+                                <!-- <span class="bold">University Closed From <span class="seventyfive">(noon)</span>:</span> 22-December-2022<br/>
+                                <span class="bold">University Closed To <span class="seventyfive">(8:15 a.m.)</span>:</span> 3-January-2023 -->
                             </div>
                         </details>
                     </div>
                 </details>
             </div>
         </div>
-        <footer class="bottom">Admin Login</footer>
+        <footer class="bottom"><a href="./login.html">Admin Login</a></footer>
     </body>
-    
-    <script>
-        var months = ["January", "February","March","April","May","June", "July", "August", "September","October", "November", "December"];
-        var dt = new Date();
-        var year = dt.getFullYear();
-        var month = months[dt.getMonth()];
-        var day = dt.getDate()
-        document.getElementById('date').innerHTML= month + " " + day + ", " + year;
-        //new Date();
-    </script>
+    <script type = "text/javascript"  src = "../Scripts/date.js" ></script>
+    <script type = "text/javascript"  src = "../Scripts/registrations.js" ></script>
 </html>
