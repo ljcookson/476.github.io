@@ -4,6 +4,10 @@ body{
 }
 header{
     background-color: rgba(0,79,4);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     color: #fff;
     font-size: 30px;
 }
