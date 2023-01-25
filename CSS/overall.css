@@ -27,7 +27,7 @@ select{
 .mainContainer{
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 5% auto 5%;
+    grid-template-rows: 1fr auto 1fr;
     row-gap: 1%;
 }
 
@@ -74,7 +74,7 @@ select{
     font-size: 50%;
     align-items: center;
     justify-items: center;
-    margin: auto 5px auto auto;
+    margin: auto 10px auto auto;
 }
 
 .bannerMiddle{
