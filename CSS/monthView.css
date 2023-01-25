@@ -1,0 +1,57 @@
+﻿body {
+    margin: 0px;
+}
+
+table, th, tr, td, caption {
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.calendars {
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    justify-items: center;
+    margin: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.dropdowns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dropdown {
+    text-align: center;
+}
+
+.buttons {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: right;
+}
+
+.logo {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.currentDate {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: white;
+    text-align: right;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+}
