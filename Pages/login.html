@@ -3,29 +3,63 @@
     <head>
         <title>Academic Schedule - Admin Login</title>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
-        <!--<script type="text/javascript" src="../Scripts/primary.js"> </script> -->
+        <link rel="stylesheet" href="../CSS/login.css">
+        <!--<script type="text/javascript" src="../Scripts/primary.js"></script> -->
     </head>
     <header>
-        <script type="text/javascript" src=""> </script>  
+        <script type="text/javascript" src=""></script>
     </head>
     <body class="mainContainer" id="mainContainer">
         <div class="banner" role="banner">
             <div class="bannerLeft">
-                <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" role="img"/>
+                <img src="../Images/UR_Logo_Primary_Reverse_White.png"
+                     alt="UofR logo"
+                     role="img"/>
             </div>
-            <div class="bannerMiddle">
-                2022-2023 Academic Schedule
-            </div>
+            <div class="bannerMiddle">2022-2023 Academic Schedule</div>
             <div class="bannerRight">
-                <p id="date">
-                </p>
+                <p id="date"></p>
             </div>
         </div>
     </header>
-    <body class="mainContainer">
-        
+    <body class="mainContainer" style="display:block!important;margin-top:20vh">
+        <div class="wrapper">
+            <div class="inner-warpper text-center">
+                <h2 class="title">Administration Login</h2>
+                <form action="" id="formvalidate">
+                    <div class="input-group">
+                        <label class="palceholder" for="userName">User ID</label>
+                        <input class="form-control"
+                               name="userName"
+                               id="userName"
+                               type="text"
+                               placeholder=""/>
+                        <span class="lighting"></span>
+                    </div>
+                    <div class="input-group">
+                        <label class="palceholder" for="userPassword">Password</label>
+                        <input class="form-control"
+                               name="userPassword"
+                               id="userPassword"
+                               type="password"
+                               placeholder=""/>
+                        <span class="lighting"></span>
+                    </div>
+                    <button type="submit" id="login">Login</button>
+                    <div class="clearfix supporter">
+                        <div class="pull-left remember-me">
+                            <input id="rememberMe" type="checkbox">
+                            <label for="rememberMe">Remember Me</label>
+                        </div>
+                        <a class="forgot pull-right" href="#">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-wrapper text-center">
+                <a href="#">Visit our university website. <span class="text-primary">Here</span></a>
+            </div>
+        </div>
     </body>
-    
-    <script type = "text/javascript"  src = "../Scripts/date.js" ></script>
-    <script type = "text/javascript"  src = "../Scripts/registrations.js" ></script>
+    <script type = "text/javascript"  src = "../Scripts/date.js"></script>
+    <script type = "text/javascript"  src = "../Scripts/registrations.js"></script>
 </html>
