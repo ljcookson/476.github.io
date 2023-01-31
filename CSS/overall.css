@@ -1,5 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
+    
     margin: 0px;
 }
 header{
@@ -29,6 +30,7 @@ select{
 
 /*  Overall Grid - The main grid all the pages will use for a consistent overall view*/
 .mainContainer{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: 1fr auto 1fr;

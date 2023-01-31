@@ -3,6 +3,7 @@
     <head>
         <title>Academic Schedule - Delete Year</title>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
+        <link rel="stylesheet" type="text/css" href="../CSS/delete.css"/>
         <script type = "text/javascript"  src = "../Scripts/date.js" ></script>
     </head>
     <header>
@@ -19,8 +20,25 @@
             </div>
         </div>
     </header>
-    <body class="mainContainer">
+    <body class="container">
+        <section class="label">Delete an entry:</section>
         
+        <form class="forms" id="delete" action="/Pages/deleteConfirm.html">
+            <span>Select the Academic year that you wish to delete, then click the delete button.</span>
+            <div class="center">
+                <label for="year">Academic Year:</label>
+                <select name="year">
+                    <option value="2019-2020"> 2019-2020</option>
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                    <option value="2022-2023">2022-2023</option>
+                </select>
+                <br>
+                <input type="submit" value="Delete" class="delete">
+            </div>
+            <br>
+            <a href="/Pages/login.html">Logout</a>
+        </form>
     </body>
     
     

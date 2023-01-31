@@ -1,0 +1,67 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span{
+    font-size: 12pt;
+    position: static;
+}
+
+.container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+    grid-template-rows: 0.25fr 0.25fr 2fr;
+    align-items: center;
+}
+
+.label{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    height: 100%;
+    font-size: 30pt;
+    padding: 15px;
+    color: white;
+    background-color: rgba(0,79,4);
+}
+.forms{
+    background-color: rgba(240, 240, 240);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+    border: 3px solid black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    font-size: 20pt;
+    height: 100%;
+}
+
+.center{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.delete{
+    font-size: 16pt;
+    border: 2px solid rgba(0,79,4);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.delete:hover{
+    background-color: rgba(0,79,4);
+    color: white;
+}
+
+.confirm{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 3px solid black;
+    padding: 20px;
+}
