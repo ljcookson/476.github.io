@@ -20,25 +20,32 @@
             </div>
         </div>
     </header>
-    <body class="container">
-        <section class="label">Delete an entry:</section>
+    <body class="mainContainer" style="display:block!important;margin-top:20vh">
+        <div class="content center">
+            <h2>Delete a Calander</h2>
         
-        <form class="forms" id="delete" action="/Pages/deleteConfirm.html">
-            <span>Select the Academic year that you wish to delete, then click the delete button.</span>
-            <div class="center">
-                <label for="year">Academic Year:</label>
-                <select name="year">
-                    <option value="2019-2020"> 2019-2020</option>
-                    <option value="2020-2021">2020-2021</option>
-                    <option value="2021-2022">2021-2022</option>
-                    <option value="2022-2023">2022-2023</option>
-                </select>
-                <br>
-                <input type="submit" value="Delete" class="delete">
-            </div>
-            <br>
-            <a href="/Pages/login.html">Logout</a>
-        </form>
+            <form class="forms" id="delete" action="/Pages/deleteConfirm.html">
+    
+                
+                    <label for="year">Academic Year:</label>
+                    <select name="year">
+                        <option value="2019-2020"> 2019-2020</option>
+                        <option value="2020-2021">2020-2021</option>
+                        <option value="2021-2022">2021-2022</option>
+                        <option value="2022-2023">2022-2023</option>
+                    </select>
+                    <br>
+                    <br>
+                    <div class="bottom">
+                        <div class="right">
+                            <input type="submit" value="Delete" class="delete">
+                        </div>
+                        <div class="left">
+                            <a class="left" href="/Pages/login.html">Logout</a>
+                        </div>
+                    </div>
+            </form>
+        </div>
     </body>
     
     

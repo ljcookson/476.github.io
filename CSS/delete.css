@@ -1,50 +1,40 @@
 *{
     font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
 }
-
+h2{
+    font-size: 20pt;
+}
 span{
     font-size: 12pt;
     position: static;
 }
+a:hover{
+    color: rgba(0,79,4);
+}
+.content {
+    width: 360px;
+    background: white;
+    margin: 20px auto;
+    min-height: 200px;
+    border: 1px solid #f3f3f3;
+  }
 
-.container{
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
-    grid-template-rows: 0.25fr 0.25fr 2fr;
-    align-items: center;
+.left{
+    float: left;
 }
 
-.label{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    height: 100%;
-    font-size: 30pt;
-    padding: 15px;
-    color: white;
-    background-color: rgba(0,79,4);
-}
-.forms{
-    background-color: rgba(240, 240, 240);
-    grid-column: 2/3;
-    grid-row: 3/4;
-    
-    border: 3px solid black;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    
-    font-size: 20pt;
-    height: 100%;
+.right{
+    float: right;
 }
 
-.center{
+.bottom{
     margin-top: 10px;
-    margin-left: 200px;
+
+    display: block;
+}
+.center{
+    text-align: center;
 }
 
 .delete{
@@ -59,9 +49,9 @@ span{
     color: white;
 }
 
-.confirm{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    border: 3px solid black;
-    padding: 20px;
+
+
+.forms{
+
+    padding:10px;
 }
