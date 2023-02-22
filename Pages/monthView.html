@@ -14,7 +14,7 @@
         </div>
         <div class="bannerMiddle">
             2022-2023 Academic Schedule
-            <span class="subtitle">Full Semester View</span>
+            <span class="subtitle">Current Month View</span>
         </div>
         <div class="bannerRight">
             <p id="date">
@@ -33,96 +33,123 @@
                     <option value="2023-2024">2023-2024</option>
                 </select>
             </div>
-            <div class="midRight">
-                <label for="semester">Semester</label>
-                <select name="semester" id="semester" value="Winter">
-                    <option value="Spring/Summer">Spring/Summer</option>
-                    <option value="Fall">Fall</option>
-                    <option value="Winter" selected="selected">Winter</option>
+            <div class="midCenter">
+                <label for="month">Month</label>
+                <select name="month" id="month" value="February 2023">
+                    <option value="April 2022">April 2022</option>
+                    <option value="May 2022">May 2022</option>
+                    <option value="June 2022">June 2022</option>
+                    <option value="July 2022">July 2022</option>
+                    <option value="August 2022">August 2022</option>
+                    <option value="September 2022">September 2022</option>
+                    <option value="October 2022">October 2022</option>
+                    <option value="November 2022">November 2022</option>
+                    <option value="December 2022">December 2022</option>
+                    <option value="January 2023">January 2023</option>
+                    <option value="February 2023" selected="selected">February 2023</option>
+                    <option value="March 2023">March 2023</option>
                 </select>
             </div>
+            <form action="./semesterView.html" class="midRight">
+                <input type="submit" value="Semester View" class="">
+            </form>
             <div class="info" role="main">
-                <h1 role="heading">Winter 2023</h1>
-                <details class="infoAccordian" role="directory">
-                    <summary role="doc-subtitle">Term Information</summary>
-                    <div class="step1">
-                        <span class="bold">Held in:</span> January - April<br/>
-                        <span class="bold">Start of Term:</span> 4-January-2023<br/>
-                        <span class="bold">End of Term:</span> 27-April-2023
-                        <p style="margin: 5px"> </p>
-                        <details class="step2">
-                            <summary>Class Dates</summary>
-                            <div class="step1">
-                                <span class="bold">Start of Classes:</span> 4-January-2023<br/>
-                                <span class="bold">End of Classes:</span> 11-April-2023
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Examination Dates</summary>
-                            <div class="step1">
-                                <span class="bold">First Day of Exams:</span> 14-April-2023<br/>
-                                <span class="bold">Last Day of Exams:</span> 27-April-2023
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Tuition and Fee Payment Dates</summary>
-                            <div class="step1">
-                                <span class="bold">Due date:</span> 4-January-2023<br/>
-                                <span class="bold">End of Penalty-Free Payment Period:</span> 31-January-2023
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Class Add/Drop Dates</summary>
-                            <div class="step1">
-                                <span class="bold">End of Course-Add Period:</span> 17-January-2023<br/>
-                                <span class="bold">End of No-Record Drop Period:</span> 17-January-2023<br/>
-                                <span class="bold">End of Grade-of-W Drop Period:</span> 15-March-2023
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Tuition and Fee Refund Dates</summary>
-                            <div class="step1">
-                                <span class="bold">End of 100% Refund Period:</span> 17-January-2023<br/>
-                                <span class="bold">End of 50% Refund Period:</span> 31-January-2023
-                            </div>
-                        </details>
+                <div class="calendars info">
+                    <div class="calendar">
+                        <table>
+                            <caption>February 2023</caption>
+                            <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td class="event" >
+                                    20
+                                    <span class="eventText" id="eventPopup">
+                                        Family Day <span class="seventyfive">(Most University Offices Closed)</span><br/>
+                                        Reading Week
+                                    </span>
+                                </td>
+                                <td class="event">
+                                    21
+                                    <span class="eventText" id="eventPopup">
+                                        Reading Week
+                                    </span>
+                                </td>
+                                <td class="event">
+                                    22
+                                    <span class="eventText" id="eventPopup">
+                                        Reading Week
+                                    </span>
+                                </td>
+                                <td class="event">
+                                    23
+                                    <span class="eventText" id="eventPopup">
+                                        Reading Week
+                                    </span>
+                                </td>
+                                <td class="event">
+                                    24
+                                    <span class="eventText" id="eventPopup">
+                                        Reading Week
+                                    </span>
+                                </td>
+                                <td class="event">
+                                    25
+                                    <span class="eventText" id="eventPopup">
+                                        Reading Week
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+        
+                        </table>
                     </div>
-                </details>
-                <details class="infoAccordian">
-                    <summary>Other Important Dates and Deadlines</summary>
-                    <div class="step1">
-                        <p style="margin: 5px"> </p>
-                        <details class="step2">
-                            <summary>Reading Week</summary>
-                            <div class="step1">
-                                <span class="bold">Start (Monday):</span> 20-February-2023<br/>
-                                <span class="bold">End (Saturday):</span> 25-February-2023
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Stat Holidays - No Classes <span class="seventyfive">(Most University Offices Closed)</span>;</summary>
-                            <div class="step1">
-                                <span class="bold">Good Friday:</span> 7-April-2023<br/>
-                                <span class="bold">Family Day:</span> 20-February-2023<br/>
-                                <!-- <span class="bold">Thanksgiving Day:</span> 10-October-2022<br/>
-                                <span class="bold">Remembrance Day:</span> 11-November-2022 -->
-                            </div>
-                        </details>
-                        <details class="step2">
-                            <summary>Other</summary>
-                            <div class="step1">
-                                <span class="bold">Student Orientation:</span> 3-January-2023<br/>
-                                <span class="bold">Last day to apply to graduate for Spring 2023 Convocation:</span> 31-January-2023<br/>
-                                <!-- <span class="bold">University Closed From <span class="seventyfive">(noon)</span>:</span> 22-December-2022<br/>
-                                <span class="bold">University Closed To <span class="seventyfive">(8:15 a.m.)</span>:</span> 3-January-2023 -->
-                            </div>
-                        </details>
-                    </div>
-                </details>
+                </div>
             </div>
         </div>
         <footer class="bottom">
-            <a href="./edit.html" class="bottomLeft">Edit a Year</a>
             <a href="./login.html" class="bottomRight">Admin Login</a>
         </footer>
     </body>

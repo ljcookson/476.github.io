@@ -13,7 +13,7 @@
             <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" role="img"/>
         </div>
         <div class="bannerMiddle">
-            2022-2023 Academic Schedule
+            2022-2023 Academic Schedule<br/>
             <span class="subtitle">Full Semester View</span>
         </div>
         <div class="bannerRight">
@@ -33,7 +33,7 @@
                     <option value="2023-2024">2023-2024</option>
                 </select>
             </div>
-            <div class="midRight">
+            <div class="midCenter">
                 <label for="semester">Semester</label>
                 <select name="semester" id="semester" value="Winter">
                     <option value="Spring/Summer">Spring/Summer</option>
@@ -41,6 +41,9 @@
                     <option value="Winter" selected="selected">Winter</option>
                 </select>
             </div>
+            <form action="./monthView.html" class="midRight">
+                <input type="submit" value="Month View" class="">
+            </form>
             <div class="info" role="main">
                 <h1 role="heading">Winter 2023</h1>
                 <details class="infoAccordian" role="directory">
@@ -122,8 +125,7 @@
             </div>
         </div>
         <footer class="bottom">
-            <a href="/Pages/edit.html">Edit a Year</a>
-            <a href="/Pages/login.html">Admin Login</a>
+            <a href="./login.html" class="bottomRight">Admin Login</a>
         </footer>
     </body>
     <script type = "text/javascript"  src = "../Scripts/registrations.js" ></script>

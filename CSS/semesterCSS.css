@@ -1,21 +1,33 @@
-/*  Middle Grid*/
+/*  Middle Grid*//* 
 .mainContainer{
-    margin-top: 20vh;
+    margin-top: 50px;
+} */
+button, input[type="submit"]{
+    width: 175px;
+    font-size: 19px;
 }
-.midLeft, .midRight{
+.middle{
+    grid-template-columns: auto auto auto;
+}
+.midLeft, .midCenter, .midRight{
     grid-row: 1/2;
     text-align: center;
+    align-items: center;
+    justify-items: center;
     margin: auto auto auto auto;
 }
 .midLeft{
     grid-column: 1/2;
 }
-.midRight{
+.midCenter{
     grid-column: 2/3;
+}
+.midRight{
+    grid-column: 3/4;
 }
 .info{
     grid-row: 2/3;
-    grid-column: 1/3;
+    grid-column: 1/4;
 }
 /*  End of Middle Grid*/
 
@@ -28,9 +40,20 @@ details[open]{
 }
 summary{
     background-color: rgba(0,79,4);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255,200,46);
     color: #fff;
     padding: 0.3%;
     padding-left: 1%;
+}
+summary:hover{
+    background-color: rgba(255,200,46);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0,79,4);
+    color: black;
+    font-weight: bold;
 }
 .step1{
     margin-left: 5%;
