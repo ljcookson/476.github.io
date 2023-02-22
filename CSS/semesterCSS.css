@@ -1,4 +1,7 @@
 /*  Middle Grid*/
+.mainContainer{
+    margin-top: 20vh;
+}
 .midLeft, .midRight{
     grid-row: 1/2;
     text-align: center;

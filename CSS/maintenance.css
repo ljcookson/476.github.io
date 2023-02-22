@@ -1,11 +1,9 @@
-
-  
   .container {
     padding-top: 10vh;
     margin: 0 auto;
     width: 400px;
     height: 400px;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: grid;
     grid-template-columns: 200px 200px;
     grid-row: auto auto;
@@ -23,7 +21,6 @@
     justify-content: center;
     text-align: center;
     font-size: 24px;
-    font-family: sans-serif;
   }
 
   .title {
