@@ -14,7 +14,7 @@ header{
 }
 button{
     background-color: rgba(255,200,46);
-    font-size: 30px;
+    font-size: 15px;
 }
 img{
     max-width: 100%;
@@ -27,12 +27,15 @@ img{
 select{
     font-family: 'Times New Roman', Times, serif;
 }
+select option{
+    font-size: 90%;
+}
 
 /*  Overall Grid - The main grid all the pages will use for a consistent overall view*/
 .mainContainer{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 95% 5%;
     grid-template-rows: 1fr auto 1fr;
     row-gap: 1%;
 }
@@ -90,5 +93,8 @@ select{
     align-items: center;
     justify-items: center;
     margin: auto auto auto auto;
+}
+.subtitle{
+    font-size: 90%;
 }
 /*  End of Banner Grid*/

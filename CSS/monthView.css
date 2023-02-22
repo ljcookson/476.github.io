@@ -34,24 +34,6 @@ table, th, tr, td, caption {
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
     justify-self: right;
-}
-
-.logo {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.currentDate {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    color: white;
-    text-align: right;
-}
-
-.banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: black;
 }

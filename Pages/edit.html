@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Academic Schedule - Edit</title>
+        <title>Academic Schedule - Edit Year</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/monthView.css"/>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
         <!--<script type="text/javascript" src="../Scripts/primary.js"> </script> -->
     </head>
@@ -11,30 +12,104 @@
                 <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" role="img"/>
             </div>
             <div class="bannerMiddle">
-                2022-2023 Academic Schedule
+                2022-2023 Academic Schedule</br>
+                <span class="subtitle">Edit an Existing Year</span>
             </div>
             <div class="bannerRight">
                 <p id="date">
                 </p>
             </div>
         </div>
-    </header>
-    <body class="mainContainer">
-        <title>Academic Schedule - Edit Year</title>
-        <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
-        <script type="text/javascript" src=""> </script>  
-    </head>
+    </header> 
     <body class="mainContainer" id="mainContainer">
-        <div class="banner" role="banner">
-            <div class="bannerLeft">
-                <img src="../Images/UR_Logo_Primary_Reverse_White.png" alt="UofR logo" role="img"/>
+        <div class="page">
+            <div class="buttons">
+                <div>
+                    <button>Upload via file (JSON)</button>
+                </div>
+                <div>
+                    <button>Save</button>
+                </div>
             </div>
-            <div class="bannerMiddle">
-                2022-2023 Academic Schedule
+            <div class="dropdowns">
+                <div>
+                    <label for="years">Year:</label>
+                    <select name="years">
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="semesters">Semester:</label>
+                    <select name="semesters">
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="summer">Summer</option>
+                    </select>
+                </div>
             </div>
-            <div class="bannerRight">
-                <p id="date">
-                </p>
+            <div class="calendars">
+                <div class="calendar">
+                    <table>
+                        <caption>January</caption>
+                        <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+    
+                    </table>
+                </div>
             </div>
         </div>
     </body>
