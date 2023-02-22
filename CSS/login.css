@@ -64,6 +64,7 @@ button {
   font-size: 20px;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  font-family: 'Times New Roman', Times, serif;
 }
 span.validate-tooltip {
   background: #D91717;
@@ -141,7 +142,7 @@ span.validate-tooltip {
   min-height: 200px;
   border: 1px solid #f3f3f3;
 }
-.wrapper .inner-warpper {
+.wrapper .inner-wrapper {
   padding: 50px 30px 60px;
   box-shadow: 1px 1.732px 10px 0px rgba(0, 0, 0, 0.063);
 }
