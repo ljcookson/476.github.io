@@ -8,7 +8,7 @@ function getD() {
     var month = months[dt.getMonth()];
     var day = dt.getDate();
     document.getElementById("date").innerHTML= month + " " + day + ", " + year;
-    console.log("balls");
+    /* console.log("balls"); */
 }
 
 window.onload = getD;
