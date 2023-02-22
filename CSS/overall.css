@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    
+    font-size: 22px;
     margin: 0px;
 }
 header{
@@ -40,7 +40,7 @@ select{
     text-align: center;
 }
 option{
-    font-size: 150%;
+    font-size: 110%;
 }
 
 /*  Overall Grid - The main grid all the pages will use for a consistent overall view*/
