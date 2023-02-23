@@ -1,8 +1,8 @@
 <?php
     $db_host = "sql9.freemysqlhosting.net";
-    $db_user = "sql9600097";
-    $db_pwd = "YNfszRpk28";
-    $db_db = "sql9600097";
+    $db_user = "sql9600607";
+    $db_pwd = "mUJCgzLCWf";
+    $db_db = "sql9600607";
     $chars = "utf8mb4";
 
     $attr = "mysql:host=$db_host;dbname=$db_db; charset=$chars";
