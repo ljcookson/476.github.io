@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.php_tmp",
+    "\\Images",
+    "\\libraries",
+    "\\Pages",
+    "\\php_tasks",
+    "\\Scripts"
   ],
-  "SelectedNode": "\\C:\\Users\\Eric Lindemann\\Source\\Repos\\476.github.io",
   "PreviewInSolutionExplorer": false
 }
