@@ -1,7 +1,7 @@
-*{
+/* *{
     font-family: 'Times New Roman', Times, serif;
     font-size: 13pt;
-}
+} */
 h2{
     font-size: 20pt;
 }
@@ -13,8 +13,9 @@ a:hover{
     color: rgba(0,79,4);
 }
 .content {
+    grid-column: 1/4;
     width: 360px;
-    background: white;
+    /* background: white; */
     margin: 20px auto;
     min-height: 200px;
     border: 1px solid #f3f3f3;
@@ -30,28 +31,26 @@ a:hover{
 
 .bottom{
     margin-top: 10px;
-
-    display: block;
+    text-align: center;
 }
 .center{
     text-align: center;
+    margin: auto auto auto auto;
+    padding:10px;
 }
 
 .delete{
-    font-size: 16pt;
-    border: 2px solid rgba(0,79,4);
-    background-color: white;
-    border-radius: 5px;
-}
-
-.delete:hover{
+    border: 2px solid rgba(255,200,46);
     background-color: rgba(0,79,4);
+    border-radius: 5px;
+    width: 150%;
     color: white;
 }
 
-
-
+.delete:hover{
+    background-color: rgba(255,200,46);
+    color: black;
+}
 .forms{
-
     padding:10px;
 }

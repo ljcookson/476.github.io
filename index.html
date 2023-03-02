@@ -41,7 +41,7 @@
                     <option value="Winter" selected="selected">Winter</option>
                 </select>
             </div>
-            <form action="./monthView.html" class="midRight">
+            <form action="./Pages/monthView.html" class="midRight">
                 <input type="submit" value="Month View" class="">
             </form>
             <div class="info" role="main">
@@ -125,7 +125,7 @@
             </div>
         </div>
         <footer class="bottom">
-            <a href="./login.html" class="bottomRight">Admin Login</a>
+            <a href="./Pages/login.html" class="bottomRight">Admin Login</a>
         </footer>
     </body>
     <script type = "text/javascript"  src = "../Scripts/registrations.js" ></script>

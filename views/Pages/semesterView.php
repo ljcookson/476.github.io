@@ -1,8 +1,27 @@
+<?php
+    require_once("../php_tasks/db.php");
+
+    //  Load the database
+    try{
+        $dbconnection = new PDO($attr, $db_user, $db_pwd, $options);
+    }
+    catch (PDOException $e){
+        throw new PDOException($e->getMessage(), (int)$e->getCode());
+    }
+    $error = "";
+
+    $semesterQuery = "";
+    print($semesterQuery);
+
+    $semesterResult = $dbconnection->query($semesterQuery);
+    $semesterRowCount = $semesterResult->rowCount();
+    print($semesterRowCount);
+    print_r($_GET);
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Academic Schedule</title>
-        <!--<script type="text/javascript" src="../Scripts/primary.js"> </script>  -->
         <title>Academic Schedule - Semester View</title>
         <link rel="stylesheet" type="text/css" href="../CSS/overall.css"/>
         <link rel="stylesheet" type="text/css" href="../CSS/semesterCSS.css"/>
